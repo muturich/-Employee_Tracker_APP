@@ -25,5 +25,34 @@ const connection = mysql.createConnection({
 connection.connect(function(err){
     if(err) throw err;
     console.log("connected as id" + connection.threadID);
-    
+    console.log(`
+     _____________________ 
+    |  _________________  |
+    | | EmployeeManager | |
+    | |_________________| |
+    |___________________| |`
+    )
+    firstPrompt();
 })
+
+//function which prompts the user for what action they should take
+
+function firstPrompt(){
+    inquirer
+    .prompt({
+        type:"list",
+        name:"task",
+        message: "Would you like to do ?",
+        choices:[
+            "View Employees",
+            "View Employees by Department",
+            "Add Employee",
+            "Remove Employee",
+            "Update Employee Role",
+            "Add Role",
+            "END"]
+
+    })
+
+    
+}

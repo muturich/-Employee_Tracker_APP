@@ -23,3 +23,6 @@ VALUES
 ("Benjamin","Frestrik",3,null),
 ("Kaka","Dave",4,3),
 ("Fred","Muller",5,null),
+("Chris","Hiller",2,null),
+("Mutubazi","Herve",5,6),
+("Doulgas","Hiller",1,2);

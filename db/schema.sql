@@ -18,7 +18,7 @@ CREATE TABLE department (
 CREATE TABLE roles (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR (30) NOT NULL,--to hold role title
-    salary DECIMAL NOT NULL, --to hold role salary
+    salary DECIMAL  NOT NULL, --to hold role salary
     Department_id INT NOT NULL, --to hold reference to department role belongs to
     FOREIGN KEY (department_id),
     REFENCE department_id

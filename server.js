@@ -1,6 +1,6 @@
 //dependencies required
 
-const mysql= require ('mysql2');
+const mysql= require ('mysql');
 const inquirer = require ('inquirer');
 require("console.table");
 
@@ -17,7 +17,7 @@ const connection = mysql.createConnection({
     user: 'root',
 
     //my password
-    password:'University1',
+    password:'amahoro20',
     database: 'employes_db'
 
 });
@@ -30,8 +30,8 @@ connection.connect(function(err){
     |  _________________  |
     | | EmployeeManager | |
     | |_________________| |
-    |___________________| |`
-    )
+    |___________________| |`)
+    
     firstPrompt();
 })
 

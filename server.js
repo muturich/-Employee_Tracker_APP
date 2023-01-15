@@ -112,7 +112,7 @@ function viewEmployee (){
 
 
     //"view Employees by Department" / READ by, SELECT * FROM 
-    /Make a department array
+    //Make a department array
 
 function viewEmployeeByDepartment() {
     console.log("Viewing employees by department\n");
